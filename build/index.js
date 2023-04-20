@@ -29,6 +29,7 @@ class Server {
         this.app.use('/users', usersRoutes_1.default);
     }
     start() {
+        console.log('Starting');
         try {
             this.app.listen(this.app.get('port'), () => {
                 console.log(`Listening on puerto marrano: `, this.app.get('port'));
